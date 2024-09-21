@@ -1,0 +1,222 @@
+header {
+  // background: red;
+  height: 100vh;
+}
+.header-content {
+  .your {
+    //styleName: Headings / H1;
+    font-family: "Clash Display", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 50.4px;
+    color: #2a254b;
+  }
+  .header-center {
+    .top {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #ebe8f4;
+      margin-top: 48px;
+      padding-bottom: 12px;
+    }
+    .left1 {
+      margin-top: 20px;
+      display: flex;
+      .right {
+        padding: 12px 0 12px 21px;
+        .graystone {
+          //styleName: Headings / H4;
+          font-family: "Clash Display", sans-serif;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 28px;
+          color: #2a254b;
+        }
+        .time {
+          //styleName: Body/Small;
+          font-family: "Satoshi", sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 21px;
+          color: #2a254b;
+          width: 179px;
+        }
+        .price {
+          //styleName: Body/Medium;
+          font-family: "Satoshi", sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          color: #2a254b;
+        }
+      }
+      .center-1 {
+        margin-top: 50px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .end-1 {
+        margin-top: 50px;
+        position: absolute;
+        left: 91%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .bootom-end {
+      margin-top: 70px;
+      //   position: absolute;
+      //   left: 79%;
+      //   transform: translate(-50%, -50%);
+      display: flex;
+      align-items: end;
+      justify-content: end;
+      .top-end {
+        .sub-total {
+          display: flex;
+          gap: 16px;
+          .sub {
+            //styleName: Headings / H4;
+            font-family: "Clash Display", sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 28px;
+            color: #4e4d93;
+          }
+          .total {
+            //styleName: Headings / H3;
+            font-family: "Clash Display", sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 33.6px;
+            color: #2a254b;
+          }
+        }
+        .taxes {
+          //styleName: Body/Small;
+          font-family: "Satoshi", sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 21px;
+          color: #4e4d93;
+        }
+        .btn-check {
+          padding: 16px 32px;
+          background: #2a254b;
+          font-family: "Satoshi", sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          color: #ffffff;
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1290px) {
+  .container {
+    padding: 24px;
+  }
+}
+
+// @media screen and (max-width: 1016px) {
+//   .bootom-end {
+//     .top-end {
+//     }
+//     .taxes {
+//     }
+//     .btn-check {
+//       //   width: 100% !important;
+//     }
+//   }
+// }
+
+@media screen and (max-width: 720px) {
+  .header-content {
+    flex-wrap: wrap;
+    .your {
+      margin-top: 50px;
+      font-family: "Clash Display", sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 33.6px;
+      color: #2a254b;
+    }
+    .header-center {
+      border-bottom: 1px solid #ebe8f4;
+      padding-bottom: 30px;
+      .top {
+        display: none;
+      }
+      .left1 {
+        .graystone {
+          //styleName: Headings / H5;
+          font-family: "Clash Display", sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 22.4px;
+          color: #2a254b;
+        }
+        .time {
+          font-family: "Satoshi", sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 21px;
+          color: #2a254b;
+        }
+        .price {
+          font-family: "Satoshi", sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          color: #2a254b;
+        }
+        .right {
+        }
+        .center-1 {
+          display: none;
+        }
+        .end-1 {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .header-content {
+    .header-center {
+      .left1 {
+        .right {
+          margin-left: -10px;
+          flex-wrap: wrap !important;
+          .graystone {
+            width: 100% !important  ;
+          }
+          .time {
+            width: 100% !important;
+          }
+        }
+      }
+    }
+  }
+
+  .bootom-end {
+    .top-end {
+      .sub-total {
+        display: flex;
+        align-items: end;
+        justify-content: end;
+      }
+    }
+    .taxes {
+      text-align: right;
+    }
+    .btn-check {
+      width: 100% !important;
+    }
+  }
+}
